@@ -602,6 +602,7 @@ nav.header-fixed:hover .nav-custom{
 }
 .nav-custom li a:hover{
     text-decoration: none;
+    font-family: helvetica-neue-bold;
 }
 .dropdown button a:focus{
     outline: unset;
