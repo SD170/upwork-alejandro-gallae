@@ -270,7 +270,7 @@ render() {
             <p className="success-message-big">
                 SHARED
             </p>
-              <button>Share</button>
+              <button data-dismiss="modal">Share</button>
             </form>
           </div>                 
         </div>
