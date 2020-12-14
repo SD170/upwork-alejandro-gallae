@@ -535,7 +535,7 @@ nav li.active a,.dropdown-content .active a{
 }
 .modal h2{
     text-transform: uppercase;
-    font-family: dodit-medium;
+    font-family: dodit-regular;
 }
 .modal form{
     width: 50%;
@@ -548,7 +548,7 @@ nav li.active a,.dropdown-content .active a{
     width: 100%;
     padding: 10px 5px;
     margin: 20px 0;
-    font-family: dodit-medium;
+    font-family: dodit-regular;
     color: #89797e 
 }
 
@@ -557,7 +557,7 @@ nav li.active a,.dropdown-content .active a{
     width: 100%;
     padding: 10px 5px;
     margin: 20px 0;
-    font-family: dodit-medium;
+    font-family: dodit-regular;
     color: #89797e;
     font-size: 15px;
     
