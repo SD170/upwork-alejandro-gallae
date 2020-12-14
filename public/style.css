@@ -108,7 +108,8 @@ a:focus, a:hover {
     display: table;
     width: 100%;
 }
-}.representation_form .representation_form_inner .file_upload input {
+}
+.representation_form .representation_form_inner .file_upload input {
     border: none;
     background: #e5e5e5;
     /* width: auto; */
@@ -116,7 +117,7 @@ a:focus, a:hover {
     /* margin-left: 10px;
     padding: 10px;
     display: table;
-    width: 100%;
+    width: 100%;*/
 }
 @media screen and (max-width: 768px) {
     .representation_form .representation_form_inner .file_upload input {
@@ -126,7 +127,8 @@ a:focus, a:hover {
     
 }
 
-}.representation_form .representation_form_inner .file_upload label {
+}
+.representation_form .representation_form_inner .file_upload label {
     font-size: 16px;
     color: #535353;
     font-family: sans-serif;
@@ -293,6 +295,8 @@ a:focus, a:hover {
  .dropdown {
     position: relative;
     display: inline-block;
+
+    
   }
   
   .dropdown-content {
@@ -300,6 +304,7 @@ a:focus, a:hover {
     opacity: 0;
     z-index: 1;
     transition: all ease-in-out 0.5s;
+
   }
   .dropdown:hover .dropdown-content{
       opacity: 1;
@@ -308,6 +313,7 @@ a:focus, a:hover {
     color: black;
     font-size: 1.4rem;
     text-decoration: none;
+    /* font-weight: bold; */
    
   }
 
@@ -592,7 +598,7 @@ nav.header-fixed:hover .nav-custom{
 }
 .nav-custom ul{
     margin: 0;
-    margin-right: 
+    /* margin-right:  */
 }
 .nav-custom li a:hover{
     text-decoration: none;
@@ -651,4 +657,24 @@ nav.header-fixed:hover .nav-custom{
 
 .image_text:hover .close i {
     visibility: visible;
+}
+
+
+.dropdown:hover {
+    opacity: 1;
+    /* font-weight: bolder; */
+    font-family: helvetica-neue-bold;
+    font-style: italic;
+
+    /* font-size: xx-large; */
+}
+.dropdown:hover .dropdown-content{
+    font-weight: normal;
+    font-family: helvetica-neue-light;
+}
+.dropdown-content:hover button:hover{
+    /* font-weight: bolder; */
+    font-family: helvetica-neue-bold;
+    font-style: italic;
+
 }
