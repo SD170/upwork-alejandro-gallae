@@ -157,7 +157,7 @@ render() {
               >Men</Link>
             </button>
             <div className="dropdown-content">
-              <div className="flex justify-center">
+              <div className="flex justify-center left">
                 <button onClick={()=> {this.genderImages('men', false)
                   this.setState({...this.state, currentActive: 'men image', isActiveMen: true, isActiveWomen: false})  
                   }}
@@ -190,7 +190,7 @@ render() {
               id="office-button">
               <Link onClick={() => { this.setState({...this.state, isActiveWomen: true, isActiveMen: false}) }} className="btn_link">Women</Link></button>
             <div className="dropdown-content">
-              <div className="flex justify-center left">
+              <div className="flex justify-center">
                 <button onClick={()=> {
                   this.genderImages('women', false)
                   this.setState({...this.state, currentActive: 'women image', isActiveMen: false, isActiveWomen: true})

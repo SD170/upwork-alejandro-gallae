@@ -592,17 +592,23 @@ nav li.active a,.dropdown-content .active a{
     text-align: center;
     opacity: 0;
     transition: all ease-in-out 0.5s;
+    
 }
 nav.header-fixed:hover .nav-custom{
     opacity: 1;
+
 }
 .nav-custom ul{
     margin: 0;
+    
     /* margin-right:  */
 }
 .nav-custom li a:hover{
     text-decoration: none;
     font-family: helvetica-neue-bold;
+    /* transition: background-color 0.5s ease;
+    background-color: red; */
+
 }
 .dropdown button a:focus{
     outline: unset;
