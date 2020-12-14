@@ -541,7 +541,7 @@ nav li.active a,.dropdown-content .active a{
 }
 .modal h2{
     text-transform: uppercase;
-    font-family: -webkit-pictograph;
+    font-family: dodit-regular,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 .modal form{
     width: 50%;
@@ -550,12 +550,13 @@ nav li.active a,.dropdown-content .active a{
     text-transform: capitalize;
 }
 .modal form input,.modal form textarea{
+    text-transform: uppercase;
     display: block;
     width: 100%;
     padding: 10px 5px;
     margin: 20px 0;
-    font-family: -webkit-pictograph;
-    color: #89797e 
+    font-family: helvetica-neue-italic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    color: #a7a7a7 
 }
 
 .success-message{
@@ -563,11 +564,22 @@ nav li.active a,.dropdown-content .active a{
     width: 100%;
     padding: 10px 5px;
     margin: 20px 0;
-    font-family: -webkit-pictograph;
-    color: #89797e;
+    font-family: helvetica-neue-italic,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    color: #707070;
     font-size: 15px;
     
 }
+
+.success-message-big{
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    margin: 20px 0;
+    font-family: helvetica-neue-italic,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    color: #707070;
+    font-size: 2em;
+}
+
 .modal form input:focus,.modal form textarea:focus{
     outline: unset;
 }
@@ -586,6 +598,7 @@ nav li.active a,.dropdown-content .active a{
 .left{
     left: -45%;
     position: relative;
+    z-index: -1;
 }
 .nav-custom{
     padding: 5px 0 !important;
@@ -679,9 +692,39 @@ nav.header-fixed:hover .nav-custom{
     font-weight: normal;
     font-family: helvetica-neue-light;
 }
+/* @keyframes hover{
+    0%{
+        color: white;
+    }
+    25%{
+        color: gray;
+    }
+    75%{
+        color: deep;
+    } */
+
 .dropdown-content:hover button:hover{
     /* font-weight: bolder; */
     font-family: helvetica-neue-bold;
     font-style: italic;
+    /* animation-name: hover; */
 
+}
+/* 
+.zindex-high{
+    z-index: 1;
+    position: absolute;
+}
+.zindex-low{
+    z-index: -1;
+    position: absolute;
+    left: -7vw;
+} */
+
+.input-line {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    outline:none;
+    box-shadow:none;
 }

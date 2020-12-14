@@ -199,8 +199,8 @@ class ViewPackage extends Component {
                             <div class="modal-body">
                                 <h2>SHARE</h2>
                                 <form action="">
-                                    <input type="text" placeholder="EMAIL(S)*" />
-                                    <textarea placeholder="COMMENTS*"></textarea>
+                                    <input className="input-line" type="text" placeholder="EMAIL(S)*" />
+                                    <textarea className="input-line" placeholder="COMMENTS*"></textarea>
                                     <button>Share</button>
                                 </form>
                             </div>
@@ -215,9 +215,9 @@ class ViewPackage extends Component {
                             <div class="modal-body">
                                 <h2 className="helvetica-neue-regular">Request Package</h2>
                                 <form action="">
-                                    <input type="text" placeholder="Name*" />
-                                    <input type="text" placeholder="Emails*" />
-                                    <textarea placeholder="Comments*"></textarea>
+                                    <input type="text" className="input-line" placeholder="Name(s)*" />
+                                    <input type="text" className="input-line" placeholder="Email(s)*" />
+                                    <textarea className="input-line" placeholder="Comments*"></textarea>
                                     <button data-target="#request-success" data-dismiss="modal" data-toggle="modal">Request Package</button>
                                 </form>
                             </div>
@@ -247,7 +247,7 @@ class ViewPackage extends Component {
                                     All the best, from the team at SYSTEM Agency. <br/><br/>
                                     <button onClick={()=>{
                                         window.close();
-                                    }}>Close</button>
+                                    }} style={{fontFamily:'helvetica-neue-lite'}}>Close</button>
                                 </p>
                                 </form>
                             </div>
