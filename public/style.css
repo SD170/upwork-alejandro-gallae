@@ -206,10 +206,10 @@ a:focus, a:hover {
 .image_text:hover .image {
     opacity: 0.3;
   }
-
+/* 
 .pad{
     margin-top: 100px;
-}
+} */
 
 .btn-gender{
     padding-top:60px;
