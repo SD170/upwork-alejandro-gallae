@@ -74,6 +74,18 @@ class Talents extends Component {
     })
   }
 
+  removeItemAll(arr, value) {
+    var i = 0;
+    while (i < arr.length) {
+      if (arr[i] === value) {
+        arr.splice(i, 1);
+      } else {
+        ++i;
+      }
+    }
+    return arr;
+  }
+
   openTab=(url)=>{
     window.open(url,'_blank');
   }
@@ -94,7 +106,10 @@ render() {
               <div style={{zIndex: 1}} className="talents-close">
                 <i style={{cursor: 'pointer'}} onClick={() => {
                   items[i].is_requested=false;
-                  this.setState({...this.state,image:items})
+                  const selectedImages = this.state.selectedImages;
+                  const newSelectedImages = this.removeItemAll(selectedImages,i);
+                  this.setState({...this.state,image:items,selectedImages:newSelectedImages});
+    
                 }}  className="material-icons md-1"> clear</i>
               </div>
               <Link to={`${url}/${image.slug}`} style={{color:"black"}} className="dodit-medium">
