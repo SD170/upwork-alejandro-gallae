@@ -254,7 +254,7 @@ render() {
         </div>
        
       </section>
-      <div className="side-labels">
+      {/* <div className="side-labels">
         <span className="view-packages"> 
          <button onClick={()=>{   
            this.openTab(`/viewpackage/${this.state.selectedImages.join(',')}`);
@@ -265,10 +265,29 @@ render() {
         <span className="deselect-all" onClick={()=>this.deletselectAll()}>
           DESELECT ALL
         </span>
+      </div> */}
+
+      <div>
+        <div className="new-left-panel">
+          <button className="view-package"
+            onClick={()=>{   
+              this.openTab(`/viewpackage/${this.state.selectedImages.join(',')}`);
+              //page reloads and selected images disappears
+              this.deletselectAll();
+            }} 
+          >VIEW PACKAGE</button>
+          <button className="deselect-all"
+          onClick={()=>this.deletselectAll()}
+          >DESELECT ALL</button>
+
+        </div>
+        <div className="talent-content">
+          <div className="container pad" style={{ width: '80%', marginTop: '60px'}}>
+              {contents}
+          </div>
+        </div>
       </div>
-      <div className="container pad" style={{ width: '78%', marginTop: '60px' }}>
-          {contents}
-      </div>
+
     </div>
     <Footer />
     
@@ -296,10 +315,10 @@ render() {
           <div class="modal-body">
             <h2>Share</h2>
             <form action="">
-            <p className="success-message-big">
+            <p className="success-message-big" style={{color:"black"}}>
                 SHARED
             </p>
-              <button data-dismiss="modal">Share</button>
+              <button data-dismiss="modal">CLOSE</button>
             </form>
           </div>                 
         </div>

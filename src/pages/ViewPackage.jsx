@@ -181,16 +181,26 @@ class ViewPackage extends Component {
         </div>
        
       </section> */}
-                    <div className="side-labels">
+                    {/* <div className="side-labels">
                         <span className="" data-target="#request" data-toggle="modal" className="view-packages">
                             SAVE AND REQUEST
-        </span>
-                    </div>
-                    <div className="container pad" style={{ width: '78%', marginTop: '60px' }}>
-                        <div className="row">
-                            {contents}
+                        </span>
+                    </div> */}
+
+                    <div>
+                        <div className="new-left-panel">
+                            <button className="" data-target="#request" data-toggle="modal" className="view-packages">SAVE AND REQUEST</button>
                         </div>
+                        <div className="talent-content">
+                            <div className="container pad" style={{ width: '80%', marginTop: '60px' }}>
+                                <div className="row">
+                                    {contents}
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
                 <Footer />
 

@@ -409,7 +409,7 @@ a:focus, a:hover {
     
 }
 
-
+/* 
 @media screen and (min-width: 1101px) {
     .view-packages {
         top: 265px;
@@ -426,9 +426,9 @@ a:focus, a:hover {
         font-style: italic;
         cursor: pointer;
     }
-}
+} */
 
-
+/* 
 @media screen and (max-width: 1100px) {
     .view-packages {
         
@@ -449,7 +449,9 @@ a:focus, a:hover {
         margin-top: 35px;
     }
 
-}
+    
+
+} */
 .slick-next {
     right: 50px !important;
 }
@@ -535,12 +537,17 @@ nav li.active a,.dropdown-content .active a{
     border-radius: 0;
     box-shadow: none;
     text-align: center;
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .modal .modal-content .modal-body{
     padding: 50px 0;
 }
 .modal h2{
     text-transform: uppercase;
+    font-size: 1.4vw;
     font-family: dodit-regular,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 .modal form{
@@ -555,7 +562,8 @@ nav li.active a,.dropdown-content .active a{
     width: 100%;
     padding: 10px 5px;
     margin: 20px 0;
-    font-family: helvetica-neue-italic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    font-family: helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+    font-size: .5vw;
     color: #a7a7a7 
 }
 
@@ -633,7 +641,7 @@ nav.header-fixed:hover .nav-custom{
 .dropdown .dropdown-content button{
     padding: 0 10px;
 }
-.side-labels {
+/* .side-labels {
 	position: fixed;
 	z-index: 999;
 	left: 0;
@@ -649,7 +657,7 @@ nav.header-fixed:hover .nav-custom{
 }
 .side-labels span:hover{
     font-weight: 500;
-}
+} */
 .image_text .close {
     position: absolute;
 	color: #000;
@@ -764,3 +772,81 @@ nav.header-fixed:hover .nav-custom{
     box-shadow:none;
 }
 
+/* New left panel */
+    .new-left-panel {
+        margin: 0;
+        padding: 0.5%;
+        padding-top: 2.5%;
+        width: 12%;
+        /* background-color: #f1f1f1; */
+        font-family: helvetica-neue-thin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+        /* font-weight: 300; */
+        font-style: italic;
+        font-size: 1.6vh;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+    }
+    
+    /* Sidebar links */
+    .new-left-panel button {
+        display: block;
+   
+
+        /* color: black; */
+        padding: 2%;
+        text-decoration: none;
+        text-align: right;
+        width: 100%;
+        padding-right: 30%;
+        outline: none;
+
+    }
+    /* .new-left-panel button:focus{
+    } */
+
+    
+    /* Active/current link */
+    /* .new-left-panel a.active {
+        background-color: #4CAF50;
+        color: white;
+    } */
+    
+    /* Links on mouse-over */
+    /* .new-left-panel a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }     */
+    /* Links on mouse-over */
+    .new-left-panel button:hover {
+        /* background-color: #555; */
+        /* color: white; */
+        font-weight: bold;
+        /* text-align: left; */
+    }
+    
+    /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+    .talent-content {
+        /* margin-left: -10%; */
+        /* padding: 1px 16px; */
+        /* height: 1000px; */
+    }
+    
+    /* On screens that are less than 700px wide, make the sidebar into a topbar */
+    @media screen and (max-width: 700px) {
+        .new-left-panel {
+        width: 100%;
+        height: auto;
+        position: relative;
+        }
+        .new-left-panel button {float: left;}
+        .talent-content {margin-left: 0;}
+    }
+    
+    /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+    @media screen and (max-width: 400px) {
+        .new-left-panel button {
+        text-align: center;
+        float: none;
+        }
+    }
