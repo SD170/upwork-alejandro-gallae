@@ -651,16 +651,51 @@ nav.header-fixed:hover .nav-custom{
     font-weight: 500;
 }
 .image_text .close {
-	position: absolute;
+    position: absolute;
 	color: #000;
 	/* opacity: 1;container pad */
-	font-size: 14px;
+	/* font-size: 14px; */
 	background-color: rgba(255,255,255,0.3);
 	width: 100%;
 	height: 100%;
-	text-align: right;
+    text-align: right;
+
 }
+.image_text .talents-close{
+    position: absolute;
+	color: #000;
+	opacity: 0.5;
+    /* font-size: 14px; */
+    /* font-weight: lighter; */
+	background-color: rgba(255,255,255,0.3);
+	width: 100%;
+    height: 100%;
+    text-align: right;
+    
+}
+.material-icons.md-1 { font-size: 1em; }
+.material-icons.md-2 { font-size: .8em; }
+
+.fa-times-thin:before{
+    /* content: '\00d7';
+    font-size:14px;
+    margin-top: -0.85em;
+    margin-right: -1.5em; */
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* position: absolute; */
+    
+}
+/* .fa-times-thin:before .image_text .close {
+    content: '\00d7';
+    font-size:14px;
+    margin-top: -.87em;
+    
+} */
 .image_text:hover img{
+    opacity: 0.5;
+}
+.image_text_faded{
     opacity: 0.5;
 }
 .image_text .close p{
@@ -728,3 +763,4 @@ nav.header-fixed:hover .nav-custom{
     outline:none;
     box-shadow:none;
 }
+

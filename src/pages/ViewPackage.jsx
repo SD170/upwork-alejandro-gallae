@@ -102,13 +102,14 @@ class ViewPackage extends Component {
                     <div className="image_text">
                         <div>
                             <div style={{zIndex: 1}} className="close">
-                                <i style={{cursor: 'pointer'}}  onClick={() => this.removeImage(i)} className="fa fa-times"></i>
+                                <i style={{cursor: 'pointer'}}  onClick={() => this.removeImage(i)} className="material-icons md-2">close</i>
                             </div>
-                            
-                            <div className="img-box">
-                                <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
-                                    alt={image.name}></img>
-                            </div>
+                            <Link to={`/talents/${image.slug}`} style={{ color: "black" }} className="dodit-medium">
+                                <div className="img-box">
+                                    <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
+                                        alt={image.name}></img>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                     <p className="style_heading">
