@@ -51,7 +51,7 @@ class Navigation extends Component {
                   <Link to="/about" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">About</Link>
                 </li>
                 <li class="mr-1">
-                  <Link to="" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Work</Link>
+                  <Link to="/work" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Work</Link>
                 </li>
                 <li class="ml-1">
                   <Link to="/talents" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Talent</Link>
