@@ -533,17 +533,40 @@ a:focus, a:hover {
 nav li.active a,.dropdown-content .active a{
     font-weight: bold;
 }
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+
+  }
+  
 .modal .modal-content{
     border-radius: 0;
     box-shadow: none;
     text-align: center;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+    width: 160%;
+    margin-left: -30%;
+    
 }
 .modal .modal-content .modal-body{
-    padding: 50px 0;
+    padding: 5% 0;
+    padding-bottom: 8%;
 }
 .modal h2{
     text-transform: uppercase;
@@ -553,7 +576,7 @@ nav li.active a,.dropdown-content .active a{
 .modal form{
     width: 50%;
     margin: 0 auto;
-    padding: 50px 0;
+    /* padding: 50px 0; */
     text-transform: capitalize;
 }
 .modal form input,.modal form textarea{
@@ -598,9 +621,10 @@ nav li.active a,.dropdown-content .active a{
     background-color: #000;
     width: 100%;
     color: #fff;
-    padding: 5px 0;
-    font-size: 14px;
-    margin-top: 50px;
+    padding: .5vh 0;
+    padding-top: .6vh;
+    font-size: 1vh;
+    margin-top: 5%;
     text-transform: uppercase;
 }
 .left{
@@ -781,6 +805,10 @@ nav.header-fixed:hover .nav-custom{
     box-shadow:none;
 }
 
+.textarea-input-line{
+    padding-bottom: -100vh;
+}
+
 /* New left panel */
     .new-left-panel {
         margin: 0;
@@ -862,3 +890,5 @@ nav.header-fixed:hover .nav-custom{
         float: none;
         }
     } */
+
+    

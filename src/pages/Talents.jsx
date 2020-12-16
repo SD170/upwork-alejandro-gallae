@@ -335,22 +335,24 @@ render() {
 
     </div>
     <Footer />
-    
-    <div id="share" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
+    <div className="middle">
+      <div id="share" class="modal fade " role="dialog">
+        <div class="modal-dialog">
 
-        <div class="modal-content">          
-          <div class="modal-body">
-            <h2>Share</h2>
-            <form action="">
-              <input className="input-line" type="text" placeholder="Email(s)*" />
-              <textarea className="input-line" placeholder="Comments*"></textarea>
-              <button data-target="#share-confirm" data-dismiss="modal" data-toggle="modal" >Share</button>
-            </form>
-          </div>                 
+          <div class="modal-content">          
+            <div class="modal-body">
+              <h2>Share</h2>
+              <form action="">
+                <input className="input-line" type="text" placeholder="Email(s)*" />
+                <input className="input-line textarea-input-line" placeholder="Comments*"></input>
+                <button data-target="#share-confirm" data-dismiss="modal" data-toggle="modal" >Share</button>
+              </form>
+            </div>                 
+          </div>
+
         </div>
-
       </div>
+
     </div>
 
     <div id="share-confirm" class="modal fade" role="dialog">
@@ -381,7 +383,7 @@ render() {
             <form action="">
               <input type="text" placeholder="Name*" />
               <input type="text" placeholder="Emails*" />
-              <textarea placeholder="Comments*"></textarea>
+              <input className="textarea-input-line" placeholder="Comments*"></input>
               <button>Request Package</button>
             </form>
           </div>                 

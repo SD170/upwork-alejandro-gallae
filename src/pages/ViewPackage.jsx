@@ -205,14 +205,14 @@ class ViewPackage extends Component {
                 <Footer />
 
                 <div id="share" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog">
 
                         <div class="modal-content">
                             <div class="modal-body">
                                 <h2>SHARE</h2>
                                 <form action="">
                                     <input className="input-line" type="text" placeholder="EMAIL(S)*" />
-                                    <textarea className="input-line" placeholder="COMMENTS*"></textarea>
+                                    <input className="input-line textarea-input-line" placeholder="COMMENTS*"></input>
                                     <button>Share</button>
                                 </form>
                             </div>
@@ -229,7 +229,7 @@ class ViewPackage extends Component {
                                 <form action="">
                                     <input type="text" className="input-line" placeholder="Name(s)*" />
                                     <input type="text" className="input-line" placeholder="Email(s)*" />
-                                    <textarea className="input-line" placeholder="Comments*"></textarea>
+                                    <input className="input-line textarea-input-line" placeholder="Comments*"></input>
                                     <button data-target="#request-success" data-dismiss="modal" data-toggle="modal">Request Package</button>
                                 </form>
                             </div>
