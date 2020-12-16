@@ -320,8 +320,11 @@ a:focus, a:hover {
 
   .dropdown-content a:hover {
       
-     font-weight: bold;
-    text-decoration: none;}
+     /* font-weight: bold; */
+    text-decoration: none;
+    /* font-weight: 100; */
+    /* font-style: normal; */
+}
   
   
 .dropdown:hover .dropdown-content {
@@ -638,17 +641,21 @@ nav li.active a,.dropdown-content .active a{
 .nav-custom{
     padding: 5px 0 !important;
     text-align: center;
+    visibility:hidden;
     opacity: 0;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s, opacity ease-in-out 0.5s
     
 }
 nav.header-fixed:hover .nav-custom{
     opacity: 1;
+    visibility: visible;
 
 }
 .nav-custom ul{
     margin: 0;
     
+
+    margin-left: -1%;
     /* margin-right:  */
 }
 .nav-custom li a:hover{
@@ -656,6 +663,15 @@ nav.header-fixed:hover .nav-custom{
     font-family: helvetica-neue-bold;
     /* transition: background-color 0.5s ease;
     background-color: red; */
+    /* font-weight: 100; */
+
+}
+.nav-custom li a{
+    text-decoration: none;
+    font-family: helvetica-neue-thin;
+    /* transition: background-color 0.5s ease;
+    background-color: red; */
+    /* font-weight: 100; */
 
 }
 .dropdown button a:focus{
@@ -667,6 +683,7 @@ nav.header-fixed:hover .nav-custom{
 }
 .dropdown .dropdown-content button{
     padding: 0 10px;
+    /* font-family: helvetica-neue-regular; */
 }
 /* .side-labels {
 	position: fixed;
@@ -761,7 +778,7 @@ nav.header-fixed:hover .nav-custom{
 
 .dropdown:hover {
     opacity: 1;
-    /* font-weight: bolder; */
+    font-weight: bolder;
     font-family: helvetica-neue-bold;
     font-style: italic;
 
@@ -783,8 +800,8 @@ nav.header-fixed:hover .nav-custom{
     } */
 
 .dropdown-content:hover button:hover{
-    /* font-weight: bolder; */
-    font-family: helvetica-neue-bold;
+    /* font-weight: 900; */
+    font-family: helvetica-neue-medium;
     font-style: italic;
     /* animation-name: hover; */
 
