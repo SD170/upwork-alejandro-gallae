@@ -274,15 +274,16 @@ a:focus, a:hover {
     text-decoration: none;
     color: #000 !important;
 }
+
  
 /* for requested to be shown down */
 .top-right h4{
-    margin-top: 1px;
+    margin-top: 10px;
 }
 /* for button height decreasement */
 .top-right button{
     line-height: 10px;
-    padding: 5px;
+    padding: 7px;
     padding-top: 4.8px;
     padding-right: 9.2px;
     /* position: relative; */
