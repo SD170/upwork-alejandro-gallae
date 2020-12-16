@@ -343,8 +343,8 @@ render() {
             <div class="modal-body">
               <h2>Share</h2>
               <form action="">
-                <input className="input-line" type="text" placeholder="Email(s)*" />
-                <input className="input-line textarea-input-line" placeholder="Comments*"></input>
+                <textarea className="input-line" type="text" placeholder="Email(s)*" />
+                <textarea className="input-line textarea-input-line" placeholder="Comments*"></textarea>
                 <button data-target="#share-confirm" data-dismiss="modal" data-toggle="modal" >Share</button>
               </form>
             </div>                 
@@ -381,9 +381,9 @@ render() {
           <div class="modal-body">
             <h2 className="helvetica-neue-regular">Request Package</h2>
             <form action="">
-              <input type="text" placeholder="Name*" />
-              <input type="text" placeholder="Emails*" />
-              <input className="textarea-input-line" placeholder="Comments*"></input>
+              <textarea type="text" placeholder="Name*" />
+              <textarea type="text" placeholder="Emails*" />
+              <textarea className="textarea-input-line" placeholder="Comments*"></textarea>
               <button>Request Package</button>
             </form>
           </div>                 

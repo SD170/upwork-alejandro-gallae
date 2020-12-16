@@ -211,8 +211,8 @@ class ViewPackage extends Component {
                             <div class="modal-body">
                                 <h2>SHARE</h2>
                                 <form action="">
-                                    <input className="input-line" type="text" placeholder="EMAIL(S)*" />
-                                    <input className="input-line textarea-input-line" placeholder="COMMENTS*"></input>
+                                    <textarea className="input-line" type="text" placeholder="EMAIL(S)*" />
+                                    <textarea className="input-line textarea-input-line" placeholder="COMMENTS*"></textarea>
                                     <button>Share</button>
                                 </form>
                             </div>
@@ -221,15 +221,15 @@ class ViewPackage extends Component {
                     </div>
                 </div>
                 <div id="request" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog">
 
                         <div class="modal-content">
                             <div class="modal-body">
                                 <h2 className="helvetica-neue-regular">Request Package</h2>
                                 <form action="">
-                                    <input type="text" className="input-line" placeholder="Name(s)*" />
-                                    <input type="text" className="input-line" placeholder="Email(s)*" />
-                                    <input className="input-line textarea-input-line" placeholder="Comments*"></input>
+                                    <textarea type="text" className="input-line" placeholder="Name(s)*" />
+                                    <textarea type="text" className="input-line" placeholder="Email(s)*" />
+                                    <textarea className="input-line textarea-input-line" placeholder="Comments*"></textarea>
                                     <button data-target="#request-success" data-dismiss="modal" data-toggle="modal">Request Package</button>
                                 </form>
                             </div>
@@ -239,7 +239,7 @@ class ViewPackage extends Component {
                 </div>
 
                 <div id="request-success" class="modal fade" role="dialog">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog">
 
                         <div class="modal-content">
                             <div class="modal-body">
