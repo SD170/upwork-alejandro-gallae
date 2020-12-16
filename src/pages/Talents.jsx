@@ -316,7 +316,7 @@ render() {
               this.openTab(`/viewpackage/${this.state.selectedImages.join(',')}`);
               //page reloads and selected images disappears
               // this.selectAll();
-              this.deletselectAll();
+              // this.deletselectAll();
               // window.location.reload();
               
             }} 
