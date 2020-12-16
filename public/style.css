@@ -723,6 +723,15 @@ nav.header-fixed:hover .nav-custom{
 }
 
 
+.image_text .talents-close i{
+    visibility: hidden;
+}
+
+.image_text:hover .talents-close i {
+    visibility: visible;
+}
+
+
 .dropdown:hover {
     opacity: 1;
     /* font-weight: bolder; */

@@ -20,7 +20,7 @@ class ViewPackage extends Component {
     }
 
     componentDidMount() {
-        document.title = "View-Package";
+        document.title = "System Agency-View Package";
         const { match: { params } } = this.props;
         let images = params.selectedImages.split(',')
         images.map((data, i) => {

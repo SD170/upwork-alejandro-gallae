@@ -22,7 +22,8 @@ class Talents extends Component {
   }
 
   componentDidMount() {
-    this.loadimages()
+    this.loadimages();
+    // this.deletselectAll();
   }
 
   loadimages = () => {
@@ -64,13 +65,24 @@ class Talents extends Component {
     console.log("faisal",this.state.images)
   }
 
+  selectAll=()=>{
+    let images =this.state.images
+    images.map((image)=>{
+      image.is_requested=true;
+    })
+    this.setState({
+      images:images,
+    })
+  }
+
   deletselectAll=()=> {
     let images =this.state.images
     images.map((image)=>{
       image.is_requested=false;
     })
     this.setState({
-      images
+      images:images,
+      selectedImages:[]
     })
   }
 
@@ -101,8 +113,13 @@ render() {
       rowContents.push(
       <div key={i} className="col-sm-3 col-xs-3 mb-6">
         <div className="image_text">
-          {image.is_requested ?
+
+
+
+
             <div>
+            {image.is_requested ?
+
               <div style={{zIndex: 1}} className="talents-close">
                 <i style={{cursor: 'pointer'}} onClick={() => {
                   items[i].is_requested=false;
@@ -112,32 +129,57 @@ render() {
     
                 }}  className="material-icons md-1"> clear</i>
               </div>
-              <Link to={`${url}/${image.slug}`} style={{color:"black"}} className="dodit-medium">
+              :<div></div>
+            }
+
                 <div className="img-box">
-                  <img className="image_text_faded" key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
-                  alt={image.name}></img>
+                  <a href={`${url}/${image.slug}`}>
+
+                    <div className="" className={(image.is_requested ? 'image_text_faded' : '')}>
+                      <img  key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
+                      alt={image.name}></img>
+                    </div>
+
+                  </a>
                 </div>
-              </Link>
-              <div className="top-right top-right-fix">
+            
+            {image.is_requested ?
+
+               <div className="top-right top-right-fix">
                 <h4 className="">Requested</h4>
-              </div>
-            </div>
-            :
-            <div>
-            <Link to={`${url}/${image.slug}`} style={{color:"black"}} className="dodit-medium">
-                <div className="img-box">
-                  <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
-                  alt={image.name}></img>
                 </div>
-              </Link>
-              <div className="top-right top-right-fix">
-                <button>
-                  <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
-                <button onClick={()=>this.requestImage(i)}>
-                  <Link  className="">Request</Link></button>
-              </div>
+                :
+                <div className="top-right top-right-fix">
+                  <button>
+                    <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
+                  <button onClick={()=>this.requestImage(i)}>
+                    <Link  className="">Request</Link></button>
+                </div>
+            }
+
             </div>
-          }
+            
+
+            {/* <div>
+                <div className="img-box">
+                  <a href={`${url}/${image.slug}`}>
+                    <img key={image.slug} src={`https://api.systemagency.com${image.Resources[0].route}`}
+                    alt={image.name}></img>
+                  </a>
+                </div>
+                <div className="top-right top-right-fix">
+                  <button>
+                    <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
+                  <button onClick={()=>this.requestImage(i)}>
+                    <Link  className="">Request</Link></button>
+                </div>
+            </div> */}
+          
+
+
+
+
+
         </div>
         <p className="style_heading">
           <Link to={`${url}/${image.slug}`} style={{color:"black"}} className="dodit-medium"> <strong className="dodit-bold">{image.name}</strong> {image.last_name}</Link>
@@ -273,7 +315,10 @@ render() {
             onClick={()=>{   
               this.openTab(`/viewpackage/${this.state.selectedImages.join(',')}`);
               //page reloads and selected images disappears
+              // this.selectAll();
               this.deletselectAll();
+              // window.location.reload();
+              
             }} 
           >VIEW PACKAGE</button>
           <button className="deselect-all"
