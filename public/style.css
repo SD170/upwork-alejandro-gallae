@@ -586,7 +586,7 @@ nav li.active a,.dropdown-content .active a{
     padding: 10px 5px;
     margin: 20px 0;
     font-family: helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-    font-size: .5vw;
+    font-size: .6vw;
     color: #a7a7a7 
 }
 
@@ -598,6 +598,8 @@ nav li.active a,.dropdown-content .active a{
     font-family: helvetica-neue-italic,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
     color: #707070;
     font-size: 15px;
+    width: 150%;
+    margin-left: -25%;
     
 }
 
@@ -623,9 +625,10 @@ nav li.active a,.dropdown-content .active a{
     color: #fff;
     padding: .5vh 0;
     padding-top: .6vh;
-    font-size: 1vh;
+    font-size: .56vw;
     margin-top: 5%;
     text-transform: uppercase;
+    font-family: helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 .left{
     left: -45%;

@@ -356,7 +356,7 @@ render() {
     </div>
 
     <div id="share-confirm" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog">
 
         <div class="modal-content">          
           <div class="modal-body">

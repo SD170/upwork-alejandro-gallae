@@ -252,14 +252,14 @@ class ViewPackage extends Component {
                                 </form> */}
                                 <form>
                                 <p className="success-message">
-                                    Your Request has been well-received.<br/><br/>
+                                    Your Request has been well-received.<br/>
                                     One of our agents will be in touch with you directly via the
                                     email address provided.<br/><br/>
-                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/><br/>
-                                    All the best, from the team at SYSTEM Agency. <br/><br/>
+                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/>
+                                    All the best, from the team at SYSTEM Agency. <br/>
                                     <button onClick={()=>{
                                         window.close();
-                                    }} style={{fontFamily:'helvetica-neue-lite'}}>Close</button>
+                                    }} style={{fontFamily:'helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;'}}>Close</button>
                                 </p>
                                 </form>
                             </div>
