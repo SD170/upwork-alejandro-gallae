@@ -20,7 +20,7 @@ class ViewPackage extends Component {
     }
 
     componentDidMount() {
-        document.title = "System Agency-View Package";
+        document.title = "System Agency - View Package";
         const { match: { params } } = this.props;
         let images = params.selectedImages.split(',')
         images.map((data, i) => {
@@ -252,15 +252,15 @@ class ViewPackage extends Component {
                                 </form> */}
                                 <form>
                                 <p className="success-message">
-                                    Your Request has been well-received.<br/>
+                                    Your request has been well-received.<br/>
                                     One of our agents will be in touch with you directly via the
                                     email address provided.<br/><br/>
                                     Due to the volume of requests received, please allow upto 48 hours for correspondence<br/>
                                     All the best, from the team at SYSTEM Agency. <br/>
+                                </p>
                                     <button onClick={()=>{
                                         window.close();
                                     }} style={{fontFamily:'helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;'}}>Close</button>
-                                </p>
                                 </form>
                             </div>
                         </div>

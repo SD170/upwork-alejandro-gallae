@@ -596,26 +596,28 @@ nav li.active a,.dropdown-content .active a{
 }
 
 .success-message{
+    text-transform: none;
     display: block;
     width: 100%;
-    padding: 10px 5px;
-    margin: 20px 0;
+    padding: 1vh .5vw;
+    margin: 2.5vh 0;
     font-family: helvetica-neue-italic,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
     color: #707070;
-    font-size: 15px;
+    font-size: .7vw;
     width: 150%;
     margin-left: -25%;
+    
     
 }
 
 .success-message-big{
     display: block;
     width: 100%;
-    padding: 10px 5px;
-    margin: 20px 0;
+    padding: 1vh .5vw;
+    margin: 4.9vh 0;
     font-family: helvetica-neue-italic,  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
     color: #707070;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .modal form input:focus,.modal form textarea:focus{
@@ -653,11 +655,15 @@ nav.header-fixed:hover .nav-custom{
     visibility: visible;
 
 }
+
+.nav-custom{
+    padding: 0 10%;
+}
 .nav-custom ul{
     margin: 0;
     
 
-    margin-left: -1%;
+    margin-left: -0.8%;
     /* margin-right:  */
 }
 .nav-custom li a:hover{
@@ -846,6 +852,26 @@ nav.header-fixed:hover .nav-custom{
         /* height: 100%; */
         overflow: auto;
     }
+
+    @media only screen and (device-width: 768px) {
+        /* For general iPad layouts */
+        
+        .new-left-panel {
+            margin: 0;
+            padding: 0.5%;
+            padding-top: 2.5%;
+            width: 12%;
+            /* background-color: #f1f1f1; */
+            font-family: helvetica-neue-thin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+            /* font-weight: 300; */
+            font-style: italic;
+            font-size: 1vh;
+            position: fixed;
+            /* height: 100%; */
+            overflow: auto;
+        }
+    
+    }
     
     /* Sidebar links */
     .new-left-panel button {
@@ -864,6 +890,8 @@ nav.header-fixed:hover .nav-custom{
     
 
     }
+
+    
     /* .new-left-panel button:focus{
     } */
 
