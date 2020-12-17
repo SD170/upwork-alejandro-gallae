@@ -238,6 +238,8 @@ a:focus, a:hover {
 /* for talent image hover text */
 .top-right-fix{
     top:10px;
+    margin-top: 2%;
+    margin-right: 2%;
     /* font-size: xx-small; */
 }
 
@@ -734,6 +736,7 @@ nav.header-fixed:hover .nav-custom{
     text-align: right;
     
 }
+
 .material-icons.md-1 { font-size: 1em; }
 .material-icons.md-2 { font-size: .8em; }
 
@@ -778,6 +781,8 @@ nav.header-fixed:hover .nav-custom{
 
 .image_text .talents-close i{
     visibility: hidden;
+    margin-top: 4%;
+    margin-right: 4%;
 }
 
 .image_text:hover .talents-close i {
