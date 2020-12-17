@@ -658,6 +658,7 @@ nav.header-fixed:hover .nav-custom{
 
 .nav-custom{
     padding: 0 10%;
+    background-color: white;
 }
 .nav-custom ul{
     margin: 0;
