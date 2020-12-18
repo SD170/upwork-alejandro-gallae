@@ -255,7 +255,7 @@ class ViewPackage extends Component {
                                     Your request has been well-received.<br/>
                                     One of our agents will be in touch with you directly via the
                                     email address provided.<br/><br/>
-                                    Due to the volume of requests received, please allow upto 48 hours for correspondence<br/>
+                                    Due to the volume of requests received, please allow upto 48 hours for correspondence.<br/><br/>
                                     All the best, from the team at SYSTEM Agency. <br/>
                                 </p>
                                     <button onClick={()=>{
