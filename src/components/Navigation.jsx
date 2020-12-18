@@ -48,16 +48,16 @@ class Navigation extends Component {
             >
               <ul class="flex justify-center">
                 <li class="mr-1">
-                  <Link to="/about" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">About</Link>
+                  <Link to="/about" className="text-black uppercase ml-2 text-lg italic transition duration-500">About</Link>
                 </li>
                 <li class="mr-1">
-                  <Link to="" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Work</Link>
+                  <Link to="" className="text-black uppercase ml-2 text-lg italic transition duration-500">Work</Link>
                 </li>
                 <li class="ml-1">
-                  <Link to="/talents" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Talent</Link>
+                  <Link to="/talents" className="text-black uppercase ml-2 text-lg italic transition duration-500">Talent</Link>
                 </li>
                 <li class="ml-1" >
-                  <Link to="/representations" className="text-black uppercase ml-2 text-lg hover:font-bold italic transition duration-500">Representation</Link>
+                  <Link to="/representations" className="text-black uppercase ml-2 text-lg italic transition duration-500">Representation</Link>
                 </li>
               </ul>
             </div>

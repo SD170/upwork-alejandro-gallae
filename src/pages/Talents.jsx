@@ -150,8 +150,8 @@ render() {
                 </div>
                 :
                 <div className="top-right top-right-fix">
-                  <button>
-                    <Link className="" data-target="#share" data-toggle="modal">Share</Link></button>
+                  <button className="" data-target="#share" data-toggle="modal" className="share">
+                    <Link >Share</Link></button>
                   <button onClick={()=>this.requestImage(i)}>
                     <Link  className="">Request</Link></button>
                 </div>
@@ -212,6 +212,8 @@ render() {
       <section className="helvetica-neue-italic mx-auto">
         <div className="flex justify-center mb-2 btn-gender">
           <div className="dropdown">
+            <div className="men-button">
+
             <button 
               className={this.state.isActiveMen? 
                 "active focus:outline-none uppercase hover:text-gray-500 transition duration-700 font-bold"
@@ -223,6 +225,12 @@ render() {
                 className="btn_link"
               >Men</Link>
             </button>
+            
+            </div>
+
+            <div className="men-dropdown">
+              
+
             <div className="dropdown-content">
               <div className="flex justify-center">
                 <button onClick={()=> {this.genderImages('men', false)
@@ -247,8 +255,13 @@ render() {
                 </button>                
               </div>
             </div>
+            </div>
+
+          
           </div>
           <div className="dropdown">
+          <div className="women-button">
+
             <button
               className={this.state.isActiveWomen? 
                 "active focus:outline-none uppercase hover:text-gray-500 transition duration-700 font-bold"
@@ -256,6 +269,11 @@ render() {
               }
               id="office-button">
               <Link onClick={() => { this.setState({...this.state, isActiveWomen: true, isActiveMen: false}) }} className="btn_link">Women</Link></button>
+              </div>
+
+            <div className="women-dropdown">
+
+            
             <div className="dropdown-content">
               <div className="flex justify-center left">
                 <button onClick={()=> {
@@ -291,6 +309,8 @@ render() {
                   <Link>Curve</Link></button>
               </div>
             </div>
+            </div>
+
           </div>
 
         </div>
@@ -334,9 +354,10 @@ render() {
       </div>
 
     </div>
+    
     <Footer />
-    <div className="middle">
-      <div id="share" class="modal fade " role="dialog">
+    {/* <div className="middle"> */}
+      <div id="share" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
           <div class="modal-content">          
@@ -345,7 +366,7 @@ render() {
               <form action="">
                 <textarea className="input-line" type="text" placeholder="Email(s)*" />
                 <textarea className="input-line textarea-input-line" placeholder="Comments*"></textarea>
-                <button data-target="#share-confirm" data-dismiss="modal" data-toggle="modal" >Share</button>
+                <button href="#share-confirm" data-dismiss="modal" data-toggle="modal" >Share</button>
               </form>
             </div>                 
           </div>
@@ -353,7 +374,8 @@ render() {
         </div>
       </div>
 
-    </div>
+    {/* </div> */}
+    
 
     <div id="share-confirm" class="modal fade" role="dialog">
       <div class="modal-dialog">
