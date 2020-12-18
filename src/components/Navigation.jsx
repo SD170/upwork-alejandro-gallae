@@ -48,7 +48,9 @@ class Navigation extends Component {
             >
               <ul class="flex justify-center">
                 <li class="mr-1">
+                <span className="n-glitch-start">
                   <Link to="/about" className="text-black uppercase ml-2 text-lg italic transition duration-500">About</Link>
+                </span>
                 </li>
                 <li class="mr-1">
                   <Link to="" className="text-black uppercase ml-2 text-lg italic transition duration-500">Work</Link>
@@ -57,7 +59,9 @@ class Navigation extends Component {
                   <Link to="/talents" className="text-black uppercase ml-2 text-lg italic transition duration-500">Talent</Link>
                 </li>
                 <li class="ml-1" >
-                  <Link to="/representations" className="text-black uppercase ml-2 text-lg italic transition duration-500">Representation</Link>
+                  <span className="n-glitch-end">
+                    <Link to="/representations" className="text-black uppercase ml-2 text-lg italic transition duration-500">Representation</Link>
+                  </span>
                 </li>
               </ul>
             </div>

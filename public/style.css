@@ -545,7 +545,7 @@ nav li.active a,.dropdown-content .active a{
 .modal {
     text-align: center;
     padding: 0!important;
-    
+
   }
   .modal:before {
     content: '';
@@ -558,7 +558,6 @@ nav li.active a,.dropdown-content .active a{
     display: inline-block;
     text-align: left;
     vertical-align: middle;
-
   }
   
 .modal .modal-content{
@@ -571,6 +570,7 @@ nav li.active a,.dropdown-content .active a{
     margin-right: auto;
     width: 150%;
     margin-left: -25%;
+    
     
 }
 .modal .modal-content .modal-body{
@@ -1031,3 +1031,12 @@ body { padding-right: 0 !important }
     transition: all ease-in-out 0.5s;
 
 } */
+
+/* N - glitch fix */
+
+.n-glitch-start{
+    padding-left: 5vw;
+}
+.n-glitch-end{
+    padding-right: 5vw;
+}
