@@ -306,7 +306,8 @@ a:focus, a:hover {
   .dropdown-content {
     position: absolute;
     opacity: 0;
-    z-index: 1;
+    /* z-index: 1; */
+    /* fixing the menu properly */ 
     transition: all ease-in-out 0.5s;
 
   }
@@ -643,7 +644,7 @@ nav li.active a,.dropdown-content .active a{
 .left{
     left: -45%;
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .nav-custom{
     padding: 5px 0 !important;
@@ -972,3 +973,61 @@ body { padding-right: 0 !important }
 /* fixing size of each popup */
 
 /* fixing men women menu */
+
+.men-dropdown{
+    visibility: hidden;
+    /* transition: all ease-out 5s; */
+
+}
+.men-button:hover + .men-dropdown{
+    visibility: visible ;
+
+}
+
+.men-dropdown:hover{
+    visibility: visible;
+    z-index: 11;
+}
+.women-dropdown{
+    visibility: hidden;
+    /* transition: all ease-out 5s; */
+
+}
+.women-button:hover + .women-dropdown{
+    visibility: visible ;
+
+}
+.women-button:hover + .men-dropdown{
+    visibility: hidden ;
+
+}
+.women-dropdown:hover{
+    visibility: visible;
+    z-index: 11;
+}
+
+
+.women-dropdown{
+    z-index: 108 !important;
+}
+
+.women-button:hover + .men-dropdown::after{
+    content: " ";
+}
+.men-button:hover + .women-dropdown::after{
+    content: " ";
+}
+
+.men-button:active + .women-dropdown{
+    visibility: hidden;
+}
+.women-button:active + .men-dropdown{
+    visibility: hidden;
+}
+
+/* 
+
+.men-button .men-dropdown{
+    transition: all ease-in-out 0.5s;
+
+} */
