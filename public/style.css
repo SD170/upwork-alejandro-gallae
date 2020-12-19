@@ -1186,3 +1186,13 @@ body { padding-right: 0 !important }
     left:0;
     right:0;
 }
+
+/* footer */
+
+.footer-zone{
+    /* position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 110px; */
+}

@@ -24,8 +24,10 @@ class About extends Component {
                 </div>
               </div>
             </section>
-            <OfficeButtons />
-            <Footer />    
+            <div className="footer-zone">
+              <OfficeButtons />
+              <Footer />    
+            </div>
           </div>
       </div>
     );
