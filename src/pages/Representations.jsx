@@ -141,7 +141,7 @@ submitHandler = (e) => {
                 <input type="text" name="eye_colour" id="_new_contacteye_colour" placeholder="EYE COLOUR*" required="required" value={this.state.eye_colour} onChange={this.handleInput}  />
                 <textarea name="comments" id="_new_contactcomments" placeholder="COMMENTS*" required="required" value={this.state.comments} onChange={this.handleInput}  ></textarea>
                 <div className="file_upload fileupload-css-ak">
-                  <font class="attachment-limit-label" style= {{"fontSize": "11px"}}>Limit 7MB</font>
+                  <font class="attachment-limit-label" style= {{"fontSize": "11px"}}>LIMIT 7MB</font>
                   <input type="file" name="attachment" id="attachment"  required="required" multiple onChange={this.onFileChange} />
                 </div>
                 <div className="re_submit">
