@@ -125,21 +125,21 @@ submitHandler = (e) => {
               <h1 className="form_heading font-Forum">Submit your Details</h1>
               <form enctype="multipart/form-data" onSubmit={this.submitHandler} ><input name="utf8" type="hidden" value="✓" />
                 <input className="representations-input-line" type="hidden" name="authenticity_token" value="MtjUymVHKU1pyGXyMejNYz8YUkG6KxG6lYE7BLEwHE1wRaMA9Gc2ToroozprnaZJWNLtxhE2LFm/gNJn8VNwnw==" />
-            <input type="text" name="applicant_name" id="_new_contactname" placeholder="Name*" required="required" value={this.state.applicant_name} onChange={this.handleInput}  />
-                <input type="number" name="age" id="_new_contactage" placeholder="Age*" required="required" value={this.state.age} onChange={this.handleInput} />
-                <input type="text" name="pkid" id="_new_contactinstagram_id" placeholder="Instagram ID*" required="required" value={this.state.pkid} onChange={this.handleInput} />
-                <input type="email" name="email" id="_new_contactemail" placeholder="Email*" required="required" value={this.state.email} onChange={this.handleInput} />
-                <input type="tel" name="mobile_number" id="_new_contactmobile_number" placeholder="Mobile Number*" required="required" value={this.state.mobile_number}  onChange={this.handleInput}  />
-                <input type="text" name="country" id="_new_contactcountry" placeholder="Country*" required="required" value={this.state.country}  onChange={this.handleInput}  />
-                <input type="text" name="nearest_major_city" id="_new_contactnearest_major_city" placeholder="Nearest Major City" value={this.state.nearest_major_city}  onChange={this.handleInput}  />
-                <input type="text" name="height" id="_new_contactheight" placeholder="Height*" required="required" value={this.state.height}  onChange={this.handleInput}  />
-                <input type="text" name="bust" id="_new_contactbust" placeholder="Bust / Chest" value={this.state.bust}  onChange={this.handleInput}  />
-                <input type="text" name="waist" id="_new_contactwaist" placeholder="Waist" value={this.state.waist}  onChange={this.handleInput}  />
-                <input type="text" name="hips" id="_new_contacthips" placeholder="Hips" value={this.state.hips}  onChange={this.handleInput}  />
-                <input type="text" name="shoes" id="_new_contactshoes" placeholder="Shoes" value={this.state.shoes}  onChange={this.handleInput} />
-                <input type="text" name="hair_colour" id="_new_contacthair_colour" placeholder="Hair*" required="required" value={this.state.hair_colour}  onChange={this.handleInput}  />
-                <input type="text" name="eye_colour" id="_new_contacteye_colour" placeholder="Eye Colour*" required="required" value={this.state.eye_colour} onChange={this.handleInput}  />
-                <textarea name="comments" id="_new_contactcomments" placeholder="Comments*" required="required" value={this.state.comments} onChange={this.handleInput}  ></textarea>
+            <input type="text" name="applicant_name" id="_new_contactname" placeholder="NAME*" required="required" value={this.state.applicant_name} onChange={this.handleInput}  />
+                <input type="number" name="age" id="_new_contactage" placeholder="AGE*" required="required" value={this.state.age} onChange={this.handleInput} />
+                <input type="text" name="pkid" id="_new_contactinstagram_id" placeholder="INSTAGRAM ID*" required="required" value={this.state.pkid} onChange={this.handleInput} />
+                <input type="email" name="email" id="_new_contactemail" placeholder="EMAIL*" required="required" value={this.state.email} onChange={this.handleInput} />
+                <input type="tel" name="mobile_number" id="_new_contactmobile_number" placeholder="MOBILE NUMBER*" required="required" value={this.state.mobile_number}  onChange={this.handleInput}  />
+                <input type="text" name="country" id="_new_contactcountry" placeholder="COUNTRY*" required="required" value={this.state.country}  onChange={this.handleInput}  />
+                <input type="text" name="nearest_major_city" id="_new_contactnearest_major_city" placeholder="NEAREST MAJOR CITY" value={this.state.nearest_major_city}  onChange={this.handleInput}  />
+                <input type="text" name="height" id="_new_contactheight" placeholder="HEIGHT*" required="required" value={this.state.height}  onChange={this.handleInput}  />
+                <input type="text" name="bust" id="_new_contactbust" placeholder="BUST / CHEST" value={this.state.bust}  onChange={this.handleInput}  />
+                <input type="text" name="waist" id="_new_contactwaist" placeholder="WAIST" value={this.state.waist}  onChange={this.handleInput}  />
+                <input type="text" name="hips" id="_new_contacthips" placeholder="HIPS" value={this.state.hips}  onChange={this.handleInput}  />
+                <input type="text" name="shoes" id="_new_contactshoes" placeholder="SHOES" value={this.state.shoes}  onChange={this.handleInput} />
+                <input type="text" name="hair_colour" id="_new_contacthair_colour" placeholder="HAIR*" required="required" value={this.state.hair_colour}  onChange={this.handleInput}  />
+                <input type="text" name="eye_colour" id="_new_contacteye_colour" placeholder="EYE COLOUR*" required="required" value={this.state.eye_colour} onChange={this.handleInput}  />
+                <textarea name="comments" id="_new_contactcomments" placeholder="COMMENTS*" required="required" value={this.state.comments} onChange={this.handleInput}  ></textarea>
                 <div className="file_upload fileupload-css-ak">
                   <font class="attachment-limit-label" style= {{"fontSize": "11px"}}>Limit 7MB</font>
                   <input type="file" name="attachment" id="attachment"  required="required" multiple onChange={this.onFileChange} />
