@@ -183,7 +183,6 @@ render() {
         </div>
         <p className="style_heading">
           <Link to={`${url}/${image.slug}`} style={{color:"black"}} className="dodit-medium"> <strong className="dodit-bold">{image.name}</strong> {image.last_name}</Link>
-        {`${url}/${image.slug}`}
         </p>
       </div>
 
