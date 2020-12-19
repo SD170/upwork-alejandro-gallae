@@ -14,14 +14,14 @@ class Office extends Component {
       <div>
         <Navigation />
         <div className="office-page" >
-          <section className="pt-48" style={{ 'min-height': '465x', marginBottom:'20.4vh'}}>
+          <section className="pt-48" style={{ 'min-height': '465x'}}>
             <CardOffice/>
           </section>
-          <div className="footer-zone">
+        </div>
+          <div className="footer-zone-office-page">
             <OfficeButtons />
             <Footer />
           </div>
-        </div>
       </div>
     );
   }

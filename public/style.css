@@ -1189,10 +1189,14 @@ body { padding-right: 0 !important }
 
 /* footer */
 
-.footer-zone{
-    /* position: fixed;
-    bottom: 0;
-    right: 0;
+.footer-zone-office-page{
+     /* position: fixed; */
+    /* bottom: 0; */
+    /* right: 0;
     left: 0;
     height: 110px; */
+    /* margin-top: 20.4vh; */
+    /* bottom: 0; */
+    margin-top: 37.9%;
+    /* height: 100%; */
 }
