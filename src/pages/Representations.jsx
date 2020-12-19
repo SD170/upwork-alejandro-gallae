@@ -124,7 +124,7 @@ submitHandler = (e) => {
             <div className="representation_form_inner aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
               <h1 className="form_heading font-Forum">Submit your Details</h1>
               <form enctype="multipart/form-data" onSubmit={this.submitHandler} ><input name="utf8" type="hidden" value="✓" />
-                <input type="hidden" name="authenticity_token" value="MtjUymVHKU1pyGXyMejNYz8YUkG6KxG6lYE7BLEwHE1wRaMA9Gc2ToroozprnaZJWNLtxhE2LFm/gNJn8VNwnw==" />
+                <input className="representations-input-line" type="hidden" name="authenticity_token" value="MtjUymVHKU1pyGXyMejNYz8YUkG6KxG6lYE7BLEwHE1wRaMA9Gc2ToroozprnaZJWNLtxhE2LFm/gNJn8VNwnw==" />
             <input type="text" name="applicant_name" id="_new_contactname" placeholder="Name*" required="required" value={this.state.applicant_name} onChange={this.handleInput}  />
                 <input type="number" name="age" id="_new_contactage" placeholder="Age*" required="required" value={this.state.age} onChange={this.handleInput} />
                 <input type="text" name="pkid" id="_new_contactinstagram_id" placeholder="Instagram ID*" required="required" value={this.state.pkid} onChange={this.handleInput} />
@@ -152,7 +152,7 @@ submitHandler = (e) => {
           </div>
           </div>
         </section>
-        <OfficeButtons />
+        {/* <OfficeButtons /> */}
         <Footer />
       </div>
     );

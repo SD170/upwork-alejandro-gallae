@@ -24,9 +24,11 @@ a:focus, a:hover {
   }
 
 .font-Forum {
-    font-family: 'Forum', cursive;
     font-weight: 100 !important;
-    font-family: 'Forum', cursive !important;
+    /* font-family: 'Forum', cursive !important; */
+    font-family: 'dodit-regular','Forum', cursive !important;
+    text-transform: uppercase;
+    font-size: 1.4vw !important;
 }
 
 .representation_form {
@@ -61,6 +63,54 @@ a:focus, a:hover {
     border: none;
     padding: 10px 0;
     transition: all 0.3s;
+
+    /* underline */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    outline:none;
+    box-shadow:none;
+
+    /*font size*/
+    font-size: .6vw;
+    font-family: helvetica-neue-light;
+
+    /* form spacing */
+    padding: 1vh .5vw;
+    margin: 2.5vh 0;
+    
+
+}.representation_form .representation_form_inner #attachment {
+
+    /*font size*/
+
+    /* form spacing */
+    padding: 0;
+    margin:0;
+    
+
+}
+.representation_form .representation_form_inner .attachment-limit-label {
+
+    /*font size*/
+    font-size: .6vw !important;
+    font-family: helvetica-neue-light !important;
+    color: #8a7c85;
+
+    /* form spacing */
+    padding: 0;
+    margin:0;
+    
+
+}.representation_form .representation_form_inner .fileupload-css-ak {
+
+
+    /* form spacing */
+    /* padding: -100px; */
+    margin:-2vh 0;
+    padding-left:.5vw;
+    
+
 }
 .representation_form .representation_form_inner input:focus {
     border-color: #000;
@@ -140,6 +190,22 @@ a:focus, a:hover {
     outline: none;
     display: block;
     transition: all 0.5s;
+
+    /* underline */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    outline:none;
+    box-shadow:none;
+
+    /* font-size */
+    font-size: .6vw;
+    font-family: helvetica-neue-light;
+
+    /* form spacing */
+    padding: 1vh .5vw;
+    margin: 2.5vh 0;
+
 }
 .representation_form .representation_form_inner textarea:focus {
     border-color: #000;
@@ -153,6 +219,12 @@ a:focus, a:hover {
     color: #fff;
     text-transform: uppercase;
     transition: all 0.5s;
+
+    width: 100%;
+    font-size: .56vw;   
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-family: helvetica-neue, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
 .representation_form .representation_form_inner .re_submit input[type="submit"]:hover {
     background: #fff;
@@ -841,6 +913,8 @@ nav.header-fixed:hover .nav-custom{
     box-shadow:none;
 }
 
+
+
 .textarea-input-line{
     padding-bottom: -100vh;
 }
@@ -1066,4 +1140,37 @@ body { padding-right: 0 !important }
 }
 .about-office-buttons #office-button{
     padding-right: 5vw;
+}
+
+/* office cards */
+.card-office{
+    /* margin: auto; */
+    /* width: 100vw; */
+    margin:0 auto;
+    /* margin-left: 10vw; */
+    /* margin-right: 10vw; */
+    /* align-content: center; */
+    display: flex;
+    /* align-items: center; */
+}
+
+.card-office-box{
+    margin: 0 5vw;
+}
+.card-office-box  a{
+    text-decoration: none !important;
+    color: #333;
+}
+.card-office-box a:hover{
+    text-decoration: none;
+}
+
+/* representations fix */
+
+.representation_form .representations-input-line {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #a7a7a7;
+    outline:none;
+    box-shadow:none;
 }
