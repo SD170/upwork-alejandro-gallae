@@ -13,11 +13,13 @@ class Office extends Component {
     return (
       <div>
         <Navigation />
-        <section className="pt-48" style={{ 'min-height': '465x' }}>
-          <CardOffice/>
-        </section>
-        <OfficeButtons />
-        <Footer />
+        <div className="office-page">
+          <section className="pt-48" style={{ 'min-height': '465x' }}>
+            <CardOffice/>
+          </section>
+          <OfficeButtons />
+          <Footer />
+        </div>
       </div>
     );
   }

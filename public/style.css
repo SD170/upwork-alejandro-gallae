@@ -1176,3 +1176,13 @@ body { padding-right: 0 !important }
     outline:none;
     box-shadow:none;
 }
+
+.office-page{
+    position: absolute;
+    top:50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left:0;
+    right:0;
+}
