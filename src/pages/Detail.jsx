@@ -37,6 +37,8 @@ class Detail extends Component {
           
         let images=this.state.data;
         let res=images[0].Resources;
+        console.log('sliderhit',images,picName)
+
         let slider = [];
         res.forEach((resource,i) => {
             if(resource.Components[0].name == picName) {
@@ -44,7 +46,7 @@ class Detail extends Component {
             }
         });
 
-   
+
         if(slider.length>0) {
             this.setState({
                 sliderItems:slider
@@ -56,6 +58,7 @@ class Detail extends Component {
     render() {
 
         const data = this.state.data;
+        // console.log(this.state);
 
 
         return (

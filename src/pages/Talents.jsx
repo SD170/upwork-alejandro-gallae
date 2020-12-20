@@ -146,14 +146,14 @@ render() {
             {image.is_requested ?
 
                <div className="top-right top-right-fix">
-                <h4 className="">Requested</h4>
+                <h4 className="">ADDED</h4>
                 </div>
                 :
                 <div className="top-right top-right-fix">
                   <button className="" data-target="#share" data-toggle="modal" className="share">
                     <Link >Share</Link></button>
                   <button onClick={()=>this.requestImage(i)}>
-                    <Link  className="">Request</Link></button>
+                    <Link  className="">ADD TO PACKAGE</Link></button>
                 </div>
             }
 
