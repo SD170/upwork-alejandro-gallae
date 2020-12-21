@@ -51,6 +51,7 @@ class LoginPage extends Component {
     const vm = this;
     formData.append('system_email', 'jhon');
     formData.append('system_password', '1234');
+    console.log(formData);
 
     axios.post('https://api.systemagency.com/auth', formData)
       .then(function (response) {
